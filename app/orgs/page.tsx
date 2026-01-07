@@ -9,6 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 function formatCurrency(amount: number | null): string {
   if (!amount) return "—";
@@ -59,7 +60,11 @@ export default async function OrgsPage() {
         <TableBody>
           {orgs?.map((org) => (
             <TableRow key={org.id}>
-              <TableCell className="font-medium">{org.name}</TableCell>
+              <TableCell className="font-medium">
+                <Link href={`/orgs/${org.slug}`} className="hover:underline">
+                  {org.name}
+                </Link>
+              </TableCell>
               <TableCell className="max-w-md">
                 <span className="line-clamp-2 text-sm text-muted-foreground">
                   {org.subtitle || "—"}

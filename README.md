@@ -31,3 +31,8 @@ Other considerations:
 
 - donations made should be calculated from txns on Manifund or a new external grants table
 - maybe have: current balance, burn, 2026 ask, detailed budget
+
+Next steps:
+
+- [x] Create /orgs/[slug]
+- Create /orgs/create & /orgs/edit
