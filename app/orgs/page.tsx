@@ -41,12 +41,10 @@ export default async function OrgsPage() {
 
   return (
     <div className="container mx-auto py-10">
-      <h1 className="text-3xl font-bold mb-6">AI Safety Organizations</h1>
+      <h1 className="text-3xl font-bold mb-6">Trace</h1>
 
       <Table>
-        <TableCaption>
-          A list of AI safety organizations seeking funding
-        </TableCaption>
+        <TableCaption>AI safety orgs seeking funding</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead>Organization</TableHead>

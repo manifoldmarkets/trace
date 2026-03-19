@@ -36,3 +36,4 @@ Next steps:
 
 - [x] Create /orgs/[slug]
 - Create /orgs/create & /orgs/edit
+- Allow autocreate from llm on /orgs/create?
